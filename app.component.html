@@ -1,0 +1,28 @@
+<div class="form">
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+  <div class="row">
+  
+  <div class="col">
+    <label >
+      Name:
+      <input class="form-control" formControlName="name" placeholder="Your name">
+    </label>
+  </div>
+  <div class="col">
+    <label>
+      Email:
+      <input class="form-control" formControlName="email" placeholder="Your email">
+    </label>
+  </div>
+  <div class="col">
+    <label>
+      Message:
+      <input class="form-control" formControlName="message" placeholder="Write something"  style="height:200px;width:auto ;">
+    </label>
+  </div>
+  <div class="col">
+  </div>
+  <button class="btn" type="submit">Send</button>
+</div>
+</form>
+</div>
